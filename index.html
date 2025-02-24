@@ -11,19 +11,19 @@
         <h1><span class="light">Paula</span><span class="bold">Pachon</span></h1>
         <nav>
             <ul>
-                <li class="op"><a href="#" class="active">Sobre mí</a></li>
-                <li class="op"><a href="#">Proyectos</a></li>
-                <li class="op"><a href="#">Contacto</a></li>
+                <li class="op"><a href="#principal" class="active">Sobre mí</a></li>
+                <li class="op"><a href="#proyectos">Proyectos</a></li>
+                <li class="op"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <a href="#" class="btn-cv">Descargar CV</a>
     </header>
     
-    <section class="hero">
+    <section id="principal" class="hero">
         <div class="info">
             <h2>Ingeniera en Multimedia</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-            <a href="#" class="btn-hablemos">Hablemos</a>
+            <a href="https://wa.me/573194972886" target="_blank" class="btn-hablemos">Hablemos</a>
         </div>
         <div class="carousel">
             <div class="carousel-container">
@@ -49,7 +49,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/" alt="">
+                    <img src="../Recursos/unity.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>Unity</p>
@@ -73,7 +73,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/" alt="">
+                    <img src="../Recursos/blender.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>Blender</p>
@@ -97,7 +97,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/ alt="">
+                    <img src="../Recursos/maya.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>Maya</p>
@@ -105,7 +105,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/" alt="">
+                    <img src="../Recursos/cshar.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>C#</p>
@@ -113,7 +113,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/figma.png alt="">
+                    <img src="../Recursos/figma.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>Figma</p>
@@ -121,7 +121,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/" alt="">
+                    <img src="../Recursos/canva.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>Canva</p>
@@ -129,7 +129,7 @@
             </div>
             <div class="tool">
                 <div class="tool-div">
-                    <img src="../Recursos/" alt="">
+                    <img src="../Recursos/cmas.png" alt="">
                 </div>
                 <div class="text-tool">
                     <p>C++</p>
@@ -138,7 +138,94 @@
         </div>
     </section>
 
+    <section id="proyectos" class="proyect">
+        <h3>Proyectos</h3>
+
+        <div class="cards-container">
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/videoinfo.mp4" type="video/mp4">
+                </video>
+                <h4>Desarrollo Web</h4>
+                <div class="hover-card">
+                    <p>Descripción del proyecto</p>
+                    <a href="#" class="btn-ver">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/videoinfo.mp4" type="video/mp4">
+                </video>
+                <h4>Diseño UI/UX</h4>
+                <div class="hover-card">
+                    <p>Descripción del proyecto</p>
+                    <a href="#" class="btn-ver">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/" type="video/mp4">
+                </video>
+                <h4>Desarrollo de Videojuegos</h4>
+                <div class="hover-card">
+                    <p>Descripción del proyecto</p>
+                    <a href="#" class="btn-ver">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/edificio.mp4" type="video/mp4">
+                </video>
+                <h4>Producción multimedia</h4>
+                <div class="hover-card">
+                    <p>Descripción del proyecto</p>
+                    <a href="#" class="btn-ver">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/Parcial_Mickey1.mp4" type="video/mp4">
+                </video>
+                <h4>Animacion 2D/3D</h4>
+                <div class="hover-card">
+                    <p>Descripción del proyecto</p>
+                    <a href="#" class="btn-ver">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/" type="video/mp4">
+                </video>
+                <h4>Programación</h4>
+                <div class="hover-card">
+                    <p>Descripción del proyecto</p>
+                    <a href="#" class="btn-ver">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto" >
+        <h3>Contacto</h3>
+    </section>
+
+    <section class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
     <!--scrips-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.querySelector(".loader").style.display = "none";
+            }, 2000); // Espera 2 segundos antes de ocultarlo
+        });
+    </script>
     <script src="../js/carousel.js" defer></script>
 </body>
 </html>
