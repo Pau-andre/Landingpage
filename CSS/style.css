@@ -13,11 +13,11 @@
 
 :root{
     --titulo: #4C529B;
-    --btn:#858CE6;
+    --btn:#6a5acd;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 body {
@@ -37,7 +37,7 @@ body, html {
 .loader{
     background-color: #f5f5fa;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,9 +109,10 @@ h3{
 h4{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    color: var(--titulo);
 }
 p{
-    font-size: 16px;
+    font-size: 14px;
 }
 a{
     font-size: 16px;
@@ -133,6 +134,16 @@ header {
     background-color: #ffffff;
     border-bottom: 3px solid #D4CEE6;
     height: 70px;
+
+    animation: 2s headera 0.5s ease-in-out;
+}
+@keyframes headera{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 h1 .light {
@@ -147,7 +158,6 @@ nav ul {
     display: flex;
     gap: 20px;
 }
-
 nav ul li{
     height: 30px;
     width: 90px;
@@ -160,17 +170,24 @@ nav ul li a {
     color: #4C529B;
     font-weight: bold;
 }
+nav ul li a.active {
+    color: white;
+    background-color: #D4CEE6;
+}
 .op:hover {
     color: white;
     background-color: #D4CEE6;
 }
-
 .btn-cv {
     background-color:#6a5acd;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+.btn-cv:hover{
+    transform: scale(1.04);
+    background-color: #858CE6;
 }
 
 /*principal*/
@@ -183,6 +200,19 @@ nav ul li a {
     padding-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
+
+    animation: 2.5s main-content 0.5s ease-in-out;
+}
+@keyframes main-content{
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.info{
+    padding-right: 20px;
 }
 .hero .info h2 {
     color: var(--titulo);
@@ -196,26 +226,38 @@ nav ul li a {
     border-radius: 5px;
     margin-top: 10px;
 }
+.btn-hablemos:hover{
+    transform: scale(1.04);
+    background-color: #858CE6;
+}
 .carousel {
     position: relative;
     width: 100%;
+    min-width: 450px;
     max-width: 600px;
+    max-height: 300px;
     overflow: hidden;
     z-index: 1;
+    margin: auto;
 }
-
 .carousel-container {
     display: flex;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
+    background-color: transparent;
+    width: 300%;
+    height: 100%;
 }
-
+.slider-section{
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+}
 .carousel-item {
     width: 100%;
-    height: 300px;
+    height: 100%;
+    display: flex;
     object-fit: cover;
+    border-radius: 5%;
 }
-
 button {
     position: absolute;
     top: 50%;
@@ -226,11 +268,16 @@ button {
     padding: 10px;
     cursor: pointer;
 }
-
+.prev, .next{
+    background-color: #6a5acd;
+    color: #f5f5fa;
+}
+.prev:hover, .next:hover{
+    background-color: #858CE6;
+}
 .prev {
     left: 10px;
 }
-
 .next {
     right: 10px;
 }
@@ -272,11 +319,9 @@ p{
     text-align: center;
     transition: all 0.3s ease;
 }
-
 .tool:hover {
     transform: scale(1.07);
 }
-
 .tool-div{
     background-color: #85ABE6;
     display: flex;
@@ -341,7 +386,8 @@ p{
     margin-top: 30px;
 }
 .proyect h3{
-    color: white;
+    color: var(--titulo);
+
 }
 .hover-card {
     position: absolute;
@@ -371,4 +417,417 @@ p{
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+}
+/*Contacto*/
+
+.contacto {
+    text-align: center;
+    padding: 0 5px 0 0;
+}
+.contacto-container {
+    position: absolute;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "footer contacto-mensaje" ;
+
+    width: 100%;
+}
+.footer{
+    width: 90%;
+    border-radius: 0 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px 0 10px 0 ;
+    
+    opacity: 0;
+    transform:translateY(100%);
+}
+.contacto.visible .footer {
+    animation-name: footer;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+@keyframes footer{
+    0%{
+        transform:translateY(100%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.contacto-img {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contacto-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+}
+.contacto-correos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.correo-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.icon {
+    background-color: #85ABE6;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 3px;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+}
+.correo-item:hover{
+    transform: scale(1.07);
+}
+.contacto-mensaje {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+}
+.formulario textarea {
+    resize: none;
+    height: 160px;
+}
+.contacto-mensaje h4{
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+}
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.formulario input:focus,
+.formulario textarea:focus{
+    outline: none;
+    border-color: #6a5acd;
+    box-shadow: 0px 0px 5px rgba(133, 140, 230, 0.5);
+}
+.boton-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.btn-enviar {
+    position: relative;
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+.btn-enviar:hover {
+    background-color: #858CE6;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    /* 🔹 HEADER: Ocultar menú y centrar contenido */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 10px 15px;
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+     h4{
+        font-size: 16px;
+     }
+    p {
+        font-size: 12px;
+    }
+
+    nav {
+        display: none !important; 
+    }
+
+    .btn-cv, .btn-hablemos {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-right: 10px;
+    }
+
+    /* 🔹 HERO: Texto arriba y carrusel debajo */
+    .hero {
+        display: flex !important; 
+        flex-direction: column !important; 
+        align-items: center !important;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .info {
+        order: -1 !important; /* La información va primero */
+        width: 90% !important; /* Para que no quede comprimida */
+    }
+
+    .carousel {
+        order: 2 !important; /* El carrusel va después */
+        width: 50% !important;
+        min-width: 320px !important;
+        max-width: 350px !important;
+        margin-top: 15px;
+    }
+
+    /* 🔹 HERRAMIENTAS: Hacer que se vea en una sola columna */
+    .grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* Forzar 1 columna en móviles */
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    /* Para tablets pequeñas (500px - 768px), mostrar en 2 columnas */
+    @media screen and (min-width: 500px) and (max-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr) !important; /* 2 columnas */
+        }
+    }
+
+    /* 🔹 PROYECTOS: Hacer que se vean en una sola columna */
+    .cards-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* Forzar a 1 columna */
+        justify-items: center !important;
+        width: 100% !important;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .proyect {
+        width: 100vw !important;
+        padding: 0 !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    
+
+    .card {
+        width: 80% !important; /* Ocupar más espacio */
+        max-width: 350px !important;
+    }
+
+    /* 🔹 CONTACTO: Asegurar que el mensaje esté encima del footer */
+    .contacto-container {
+        display: flex !important;
+        flex-direction: column-reverse !important; /* Footer abajo, mensaje arriba */
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .footer {
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 15px !important;
+        border-radius: 0 !important;
+    }
+
+    .contacto-correos {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .correo-item {
+        justify-content: center !important;
+    }
+
+    .contacto-mensaje {
+        width: 90% !important;
+        max-width: 400px !important;
+        padding: 15px !important;
+        margin-left: 10px;
+    }
+
+    /* 🔹 Ajuste para la hover-card en celulares */
+    .hover-card {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 90% !important;
+        max-width: 300px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: opacity 0.3s ease, transform 0.3s ease !important;
+        z-index: 10 !important;
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        padding: 15px !important;
+        border-radius: 10px !important;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .card:hover .hover-card {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+/* Para (768px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel {
+        max-width: 50%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+
+    .hover-card {
+        left: 0%;
+        top: 0%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 300px; 
+        height: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.95); /* Fondo semi-transparente */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .card:hover .hover-card {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-container {
+        display: flex;
+        flex-direction: column-reverse; /* Invierte el orden: primero el footer, luego el mensaje */
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        border-radius: 0; /* Elimina bordes si los tenía */
+        text-align: center;
+        z-index: 1;
+    }
+
+    .contacto-mensaje {
+        position: relative;
+        z-index: 10; /* Asegura que el formulario esté sobre el footer */
+        background-color: white; /* Asegura visibilidad */
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en escritorio */
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hover-card {
+        left: 0%;
+        top: 0%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 300px; 
+        height: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.95); /* Fondo semi-transparente */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .card:hover .hover-card {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contacto-container {
+        grid-template-columns: 55% 45%;
+    }
+
 }

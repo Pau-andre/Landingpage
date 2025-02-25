@@ -16,20 +16,26 @@
                 <li class="op"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <a href="#" class="btn-cv">Descargar CV</a>
+        <a href="../Recursos/CV_PaulaPachon.pdf" download="CV_PaulaPachon" class="btn-cv">Descargar CV</a>
     </header>
     
     <section id="principal" class="hero">
         <div class="info">
             <h2>Ingeniera en Multimedia</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-            <a href="https://wa.me/573194972886" target="_blank" class="btn-hablemos">Hablemos</a>
+            <p>Soy una apasionada del diseño de experiencias digitales y la creación de videojuegos. Con interes en UI/UX, programación y producción digital, siempre busco fusionar creatividad y tecnología para generar experiencias envolventes, tanto en la web como en los videojuegos.</p>
+            <a href="https://api.whatsapp.com/send/?phone=573194972886&text=Hola,%20me%20interesa%20tu%20perfil." target="_blank" class="btn-hablemos">Hablemos</a>
         </div>
         <div class="carousel">
-            <div class="carousel-container">
-                <img src="../Recursos/imagen1.jpg" class="carousel-item">
-                <img src="../Recursos/imagen2.jpg" class="carousel-item">
-                <img src="../Recursos/imagen3.jpg" class="carousel-item">
+            <div class="carousel-container" id="slider">
+                <div class="slider-section">
+                    <img src="../Recursos/fp.png" class="carousel-item">
+                </div>
+                <div class="slider-section">
+                    <img src="../Recursos/ra.jpg" class="carousel-item">
+                </div>
+                <div class="slider-section">
+                    <img src="../Recursos/infof.png" class="carousel-item">
+                </div>
             </div>
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
@@ -146,41 +152,61 @@
                 <video autoplay loop muted>
                     <source src="../Recursos/videoinfo.mp4" type="video/mp4">
                 </video>
-                <h4>Desarrollo Web</h4>
+                <h4>Infografía interactiva</h4>
                 <div class="hover-card">
-                    <p>Descripción del proyecto</p>
-                    <a href="#" class="btn-ver">Ver más</a>
+                    <p>Esta infografía fue creada con el objetivo de diseñar una interfaz en la que todos los elementos estuvieran inspirados en el universo de Studio Ghibli. Primero, se diseñó en Figma y luego se programó y desarrolló en Google Web Designer.</p>
+                    <a href="https://infografiainteractiva.netlify.app/" class="btn-ver" target="_blank">Ver proyecto</a>
                 </div>
             </div>
             <div class="card">
                 <video autoplay loop muted>
-                    <source src="../Recursos/videoinfo.mp4" type="video/mp4">
+                    <source src="../Recursos/juegom.mp4" type="video/mp4">
                 </video>
-                <h4>Diseño UI/UX</h4>
+                <h4>Teach dreamer</h4>
                 <div class="hover-card">
-                    <p>Descripción del proyecto</p>
-                    <a href="#" class="btn-ver">Ver más</a>
+                    <p>Este videojuego busca inspirar a chicas de 10° y 11° a explorar la Ingeniería Multimedia mostrándoles todas las áreas en las que pueden desarrollarse. A través de una experiencia interactiva demuestra que esta carrera no se trata solo de matemáticas.</p>
+                    <a href="https://tranquil-liger-5426be.netlify.app/" class="btn-ver">Ver proyecto</a>
                 </div>
             </div>
 
             <div class="card">
                 <video autoplay loop muted>
-                    <source src="../Recursos/" type="video/mp4">
+                    <source src="../Recursos/greens.mp4" type="video/mp4">
                 </video>
-                <h4>Desarrollo de Videojuegos</h4>
+                <h4>Green Sense</h4>
                 <div class="hover-card">
-                    <p>Descripción del proyecto</p>
-                    <a href="#" class="btn-ver">Ver más</a>
+                    <p>En este proyecto se desarrolló una página web de un producto físico llamado 'Jardinerito'. Mi aporte incluyó el diseño de diversas pantallas para la app y la web, así como su desarrollo, asegurando una experiencia visual y funcional y parte del comercial del producto.</p>
+                    <a href="https://green-sense-beige.vercel.app/" class="btn-ver" target="_blank">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/hockey.mp4" type="video/mp4">
+                </video>
+                <h4>Air hockey</h4>
+                <div class="hover-card">
+                    <p>Se desarrolló un juego con audio procedural en Unity donde cada sonido es generado a partir de ondas y frecuencias específicas, creando una experiencia sonora dinámica y única durante el juego.</p>
+                    <a href="https://gameairhockey.netlify.app/" class="btn-ver" target="_blank">Ver proyecto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <video autoplay loop muted>
+                    <source src="../Recursos/anaglifo.mp4" type="video/mp4">
+                </video>
+                <h4>Anaglifo</h4>
+                <div class="hover-card">
+                    <p>Se creó un video anaglifo con el objetivo de experimentar la percepción de profundidad y explorar técnicas para hacer que los elementos parecieran salir de la pantalla, brindando una experiencia visual inmersiva para el espectador.</p>
+                    <a href="https://youtu.be/k_uloiWiMWU?si=8Pwt7OWCiM2yHfTn" class="btn-ver" target="_blank" >Ver video</a>
                 </div>
             </div>
             <div class="card">
                 <video autoplay loop muted>
                     <source src="../Recursos/edificio.mp4" type="video/mp4">
                 </video>
-                <h4>Producción multimedia</h4>
+                <h4>Camera projection</h4>
                 <div class="hover-card">
-                    <p>Descripción del proyecto</p>
-                    <a href="#" class="btn-ver">Ver más</a>
+                    <p>Mediante camera mapping, se transformó una imagen en un video 3D, creando un efecto de profundidad y realismo.</p>
                 </div>
             </div>
 
@@ -188,44 +214,122 @@
                 <video autoplay loop muted>
                     <source src="../Recursos/Parcial_Mickey1.mp4" type="video/mp4">
                 </video>
-                <h4>Animacion 2D/3D</h4>
+                <h4>Mickey y el secreto del hechicero</h4>
                 <div class="hover-card">
-                    <p>Descripción del proyecto</p>
-                    <a href="#" class="btn-ver">Ver más</a>
+                    <p>En esta corta animación, Mickey quien es un hechicero emprende la búsqueda de un pergamino con un poderoso hechizo.</p>
                 </div>
             </div>
             <div class="card">
                 <video autoplay loop muted>
-                    <source src="../Recursos/" type="video/mp4">
+                    <source src="../Recursos/reel.mp4" type="video/mp4">
                 </video>
-                <h4>Programación</h4>
+                <h4>Reelportafolio</h4>
                 <div class="hover-card">
-                    <p>Descripción del proyecto</p>
-                    <a href="#" class="btn-ver">Ver más</a>
+                    <p>Reel de portafolio que presenta diversas técnicas de motion design, destacando animaciones dinámicas y efectos visuales</p>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section id="contacto" >
+    <section id="contacto" class="contacto">
         <h3>Contacto</h3>
+        <div class="contacto-container">
+            <div class="footer">
+                <div class="contacto-img"><img src="../Recursos/photo.jpg" alt=""></div>
+                <div class="contacto-correos">
+                    <a href="mailto:pachon.paula1@gmail.com" class="correo-item" target="_blank">
+                        <img class="icon" src="../Recursos/gmail.png" alt="">
+                        <span>correo</span>
+                    </a>
+                    <a href="https://www.behance.net/paulapachon1" class="correo-item" target="_blank">
+                        <img class="icon" src="../Recursos/behance.png" alt="">
+                        <span>Behance</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/paula-pach%C3%B3n-b88810128" class="correo-item" target="_blank">
+                        <img class="icon" src="../Recursos/linkedin.png" alt="">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=573194972886" class="correo-item" target="_blank">
+                        <img class="icon" src="../Recursos/whatsapp.png" alt="">
+                        <span>Whatsapp</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contacto-mensaje">
+                <h4>Mensaje</h4>
+                <div class="formulario" action>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>  
+                </div>
+                <div class="boton-container">
+                    <button class="btn-enviar">Enviar</button>
+                </div>
+            </div>
+        </div>
     </section>
-
+    
+    <!--Loader-->
     <section class="loader">
         <div></div>
         <div></div>
         <div></div>
     </section>
-
-    <!--scrips-->
+    
+    <!--script-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 document.querySelector(".loader").style.display = "none";
-            }, 2000); // Espera 2 segundos antes de ocultarlo
+            }, 2000); 
         });
     </script>
     <script src="../js/carousel.js" defer></script>
+    <script src="../js/activenav.js" defer></script>
+    <!--script mensaje-->
+    <script >
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".btn-enviar").addEventListener("click", function () {
+                let email = document.getElementById("email").value.trim();
+                let mensaje = document.getElementById("mensaje").value.trim();
+
+                if (email === "" || mensaje === "") {
+                    alert("Por favor, completa todos los campos.");
+                    return;
+                }
+
+                // Enviar los datos al servidor con Fetch
+                fetch("enviarCorreo.php", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: `email=${encodeURIComponent(email)}&mensaje=${encodeURIComponent(mensaje)}`
+                })
+                .then(response => response.text())
+                .then(data => {
+                    alert("Mensaje enviado correctamente"); // Muestra confirmación
+                    document.getElementById("email").value = ""; // Limpia email
+                    document.getElementById("mensaje").value = ""; // Limpia mensaje
+                })
+                .catch(error => console.error("Error:", error));
+            });
+        });
+    </script>
+    <!--script footer-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contacto = document.querySelector("#contacto");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        contacto.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            observer.observe(contacto);
+        });
+
+    </script>
 </body>
 </html>

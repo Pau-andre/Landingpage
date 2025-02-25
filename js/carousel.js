@@ -1,18 +1,42 @@
-let index = 0;
+const btnizq = document.querySelector(".prev"),
+      btndere = document.querySelector(".next"),
+      slider = document.querySelector("#slider"),
+      sliderSection = document.querySelectorAll(".slider-section");
 
-function moveSlide(step) {
-    const slides = document.querySelectorAll('.carousel-item');
-    index += step;
+btnizq.addEventListener("click", e => moverizq());
+btndere.addEventListener("click", e => moverdere());
 
-    if (index >= slides.length) index = 0;
-    if (index < 0) index = slides.length - 1;
+setInterval(() => {
+   moverdere()
+}, 4000);
 
-    document.querySelector('.carousel-container').style.transform = `translateX(${-index * 100}%)`;
+let operacion = 0;
+    counter = 0;
+    widthImg = 100/sliderSection.length;
+
+function moverdere(){
+    if(counter >= sliderSection.length-1){
+        counter = 0;
+        operacion = 0;
+        slider.style.transform = `translate(-${operacion}%)`; 
+        slider.style.transition="none"
+        return;
+    }
+    counter++;
+    operacion = operacion + widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
 }
-
-// Auto-play
-setInterval(() => moveSlide(1), 3000);
-
-// Event listeners para los botones (si quieres usar addEventListener en vez de inline HTML)
-document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
-document.querySelector(".next").addEventListener("click", () => moveSlide(1));
+function moverizq(){
+    counter--;
+    if(counter < 0){
+        counter = sliderSection.length-1;
+        operacion = widthImg*(sliderSection.length-1);
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition="none"
+        return;
+    }
+    operacion = operacion - widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+}
