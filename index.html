@@ -1,275 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paula Pachon - Ingeniera en Multimedia</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paula Pachón — Ingeniera en multimedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/pstyle.css" />
 </head>
 <body>
-    <header>
-        <h1><span class="light">Paula</span><span class="bold">Pachon</span></h1>
-        <nav>
-            <ul>
-                <li class="op"><a href="#principal" class="active">Sobre mí</a></li>
-                <li class="op"><a href="#proyectos">Proyectos</a></li>
-                <li class="op"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <a href="../Recursos/CVPaulaA Pachon.pdf" download="CVPaulaA Pachon" class="btn-cv">Descargar CV</a>
-    </header>
-    
-    <section id="principal" class="hero">
-        <div class="info">
-            <h2>Ingeniera en Multimedia</h2>
-            <p>Soy una apasionada del diseño de experiencias digitales y la creación de videojuegos. Con interes en UI/UX, programación y producción digital, siempre busco fusionar creatividad y tecnología para generar experiencias envolventes, tanto en la web como en los videojuegos.</p>
-            <a href="https://api.whatsapp.com/send/?phone=573194972886&text=Hola,%20me%20interesa%20tu%20perfil." target="_blank" class="btn-hablemos">Hablemos</a>
-        </div>
-        <div class="carousel">
-            <div class="carousel-container" id="slider">
-                <div class="slider-section">
-                    <img src="../Recursos/fp.png" class="carousel-item">
-                </div>
-                <div class="slider-section">
-                    <img src="../Recursos/ra.jpg" class="carousel-item">
-                </div>
-                <div class="slider-section">
-                    <img src="../Recursos/infof.png" class="carousel-item">
-                </div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-    </section>
-    
-    <section class="herramientas">
-        <h3>Herramientas</h3>
-        <div class="grid">
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/photoshop.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Photoshop</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/unity.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Unity</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/codificacion.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Html y CSS</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/ilustrador-adobe.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Illustrator</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/blender.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Blender</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/piton.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Python</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/despues-de-los-efectos.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>After Effects</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/maya.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Maya</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/cshar.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>C#</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/figma.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Figma</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/canva.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>Canva</p>
-                </div>
-            </div>
-            <div class="tool">
-                <div class="tool-div">
-                    <img src="../Recursos/cmas.png" alt="">
-                </div>
-                <div class="text-tool">
-                    <p>C++</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="proyectos" class="proyect">
-        <h3>Proyectos</h3>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#inicio">Paula<span>Pachon</span></a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Sobre mi</a></li>
+      <li><a href="#trabajos">Trabajos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="../Recursos/CVPaulaA Pachon.pdf" target="_blank" class="btn">CV</a>
+  </nav>
 
-        <div class="cards-container">
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/videoinfo.mp4" type="video/mp4">
-                </video>
-                <h4>Infografía interactiva</h4>
-                <div class="hover-card">
-                    <p>Esta infografía fue creada con el objetivo de diseñar una interfaz en la que todos los elementos estuvieran inspirados en el universo de Studio Ghibli. Primero, se diseñó en Figma y luego se programó y desarrolló en Google Web Designer.</p>
-                    <a href="https://infografiainteractiva.netlify.app/" class="btn-ver" target="_blank">Ver proyecto</a>
-                </div>
-            </div>
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/juegom.mp4" type="video/mp4">
-                </video>
-                <h4>Teach dreamer</h4>
-                <div class="hover-card">
-                    <p>Este videojuego busca inspirar a chicas de 10° y 11° a explorar la Ingeniería Multimedia mostrándoles todas las áreas en las que pueden desarrollarse. A través de una experiencia interactiva demuestra que esta carrera no se trata solo de matemáticas.</p>
-                    <a href="https://tranquil-liger-5426be.netlify.app/" class="btn-ver">Ver proyecto</a>
-                </div>
-            </div>
+  <!-- HERO -->
+  <section id="inicio">
+    <div class="hero-inner">
 
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/greens.mp4" type="video/mp4">
-                </video>
-                <h4>Green Sense</h4>
-                <div class="hover-card">
-                    <p>En este proyecto se desarrolló una página web de un producto físico llamado 'Jardinerito'. Mi aporte incluyó el diseño de diversas pantallas para la app y la web, así como su desarrollo, asegurando una experiencia visual y funcional y parte del comercial del producto.</p>
-                    <a href="https://green-sense-beige.vercel.app/" class="btn-ver" target="_blank">Ver proyecto</a>
-                </div>
-            </div>
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/hockey.mp4" type="video/mp4">
-                </video>
-                <h4>Air hockey</h4>
-                <div class="hover-card">
-                    <p>Se desarrolló un juego con audio procedural en Unity donde cada sonido es generado a partir de ondas y frecuencias específicas, creando una experiencia sonora dinámica y única durante el juego.</p>
-                    <a href="https://gameairhockey.netlify.app/" class="btn-ver" target="_blank">Ver proyecto</a>
-                </div>
-            </div>
+      <!-- Izquierda: texto -->
+      <div class="hero-copy">
+        <div class="hero-badge">Hola, Soy <span>Paula</span></div>
+        <h1 class="hero-title">Ingeniera en multimedia</h1>
+        <p class="hero-desc">
+          Me apasiona el <span>Diseño UX/UI</span>, diseñar experiencias digitales claras,
+          intuitivas y útiles, creando soluciones que conecten,
+          generen impacto y faciliten el día a día de las personas.
+        </p>
+        <a href="#contacto" class="btn">¿Hablamos?</a>
+      </div>
 
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/anaglifo.mp4" type="video/mp4">
-                </video>
-                <h4>Anaglifo</h4>
-                <div class="hover-card">
-                    <p>Se creó un video anaglifo con el objetivo de experimentar la percepción de profundidad y explorar técnicas para hacer que los elementos parecieran salir de la pantalla, brindando una experiencia visual inmersiva para el espectador.</p>
-                    <a href="https://youtu.be/k_uloiWiMWU?si=8Pwt7OWCiM2yHfTn" class="btn-ver" target="_blank" >Ver video</a>
-                </div>
-            </div>
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/edificio.mp4" type="video/mp4">
-                </video>
-                <h4>Camera projection</h4>
-                <div class="hover-card">
-                    <p>Mediante camera mapping, se transformó una imagen en un video 3D, creando un efecto de profundidad y realismo.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/Parcial_Mickey1.mp4" type="video/mp4">
-                </video>
-                <h4>Mickey y el secreto del hechicero</h4>
-                <div class="hover-card">
-                    <p>En esta corta animación, Mickey quien es un hechicero emprende la búsqueda de un pergamino con un poderoso hechizo.</p>
-                </div>
-            </div>
-            <div class="card">
-                <video autoplay loop muted>
-                    <source src="../Recursos/reel.mp4" type="video/mp4">
-                </video>
-                <h4>Reelportafolio</h4>
-                <div class="hover-card">
-                    <p>Reel de portafolio que presenta diversas técnicas de motion design, destacando animaciones dinámicas y efectos visuales</p>
-                </div>
-            </div>
+      <!-- Derecha: foto + tags flotantes -->
+      <div class="hero-photo-wrap">
+        <div class="float-tag tag-ux">
+            <img src="../Iconos/pdis.png" alt="Diseño UX/UI" />
         </div>
 
-    </section>
-
-    <section id="contacto" class="contacto">
-        <h3>Contacto</h3>
-        <div class="contacto-container">
-            <div class="footer">
-                <div class="contacto-img"><img src="../Recursos/photo.jpg" alt=""></div>
-                <div class="contacto-correos">
-                    <a href="mailto:pachon.paula1@gmail.com" class="correo-item" target="_blank">
-                        <img class="icon" src="../Recursos/gmail.png" alt="">
-                        <span>correo</span>
-                    </a>
-                    <a href="https://www.behance.net/paulapachon1" class="correo-item" target="_blank">
-                        <img class="icon" src="../Recursos/behance.png" alt="">
-                        <span>Behance</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/paula-pach%C3%B3n-b88810128" class="correo-item" target="_blank">
-                        <img class="icon" src="../Recursos/linkedin.png" alt="">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://api.whatsapp.com/send/?phone=573194972886" class="correo-item" target="_blank">
-                        <img class="icon" src="../Recursos/whatsapp.png" alt="">
-                        <span>Whatsapp</span>
-                    </a>
-                </div>
-            </div>
-            <div class="contacto-mensaje">
-                <h4>Mensaje</h4>
-                <div class="formulario" action>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-                    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>  
-                </div>
-                <div class="boton-container">
-                    <button class="btn-enviar">Enviar</button>
-                </div>
-            </div>
+        <div class="float-tag tag-prod">
+            <img src="../Iconos/pmulti.png" alt="Producción Multimedia" />
         </div>
-    </section>
-    
-    <!--Loader-->
+
+        <img src="../RecursosGraficos/fotoprin.png" alt="Paula Pachón" class="hero-img" />
+
+        <div class="float-tag tag-code">
+            <img src="../Iconos/pbasica.png" alt="Programación Básica" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TRABAJOS
+  ══════════════════════════════ -->
+  <section id="trabajos">
+ 
+    <div class="section-header">
+      <p class="section-label">Portafolio</p>
+      <h2 class="section-title">Trabajos</h2>
+    </div>
+
+    <div class="carousel-outer">
+      <button class="arrow arrow-left" id="prevBtn" aria-label="Anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+ 
+      <div class="carousel" id="carousel">
+ 
+        <!-- ── CARD 1 ── -->
+        <a class="card" href="https://green-rise.netlify.app/" target="_blank">
+          <div class="card-thumb">
+            <img src="../RecursosGraficos/GreenRise.png" alt="GreenRise" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">GreenRise (Ganador Skills Challenge 2025)</h3>
+            <p class="card-desc">Videojuego basado en los Objetivos de Desarrollo Sostenible. Me encargué del diseño de interfaces y la experiencia del usuario, buscando que sea  clara y atractiva.</p>
+            <div class="etiquetas">
+              <span class="card-tagUx">Diseño UX/UI</span>
+              <span class="card-tagpro">Programación</span>
+            </div>
+          </div>
+        </a>
+ 
+        <!-- ── CARD 2 ── -->
+        <a class="card" href="proyectos/encuesta.html">
+          <div class="card-thumb">
+            <img src="../RecursosGraficos/Encuesta.png" alt="Encuesta" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Encuesta de satisfacción</h3>
+            <p class="card-desc">Encuesta de satisfacción orientada a comprender la percepción del servicio por parte de los usuarios.
+                Optimicé la estructura de preguntas y la experiencia para facilitar la respuesta y mantener coherencia con la marca.</p>
+            <span class="card-tagUx">Diseño UX/UI</span>
+          </div>
+        </a>
+ 
+        <!-- ── CARD 3 ── -->
+        <!-- <a class="card" href="proyectos/dashboard.html">
+          <div class="card-thumb">
+            <div class="card-thumb-placeholder">📊</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Dashboard de gestión de casos</h3>
+            <p class="card-desc">Dashboard para centralizar y visualizar solicitudes de usuarios, mejorando la gestión y el seguimiento de casos.</p>
+            <span class="card-tag">Diseño UX/UI</span>
+          </div>
+        </a> -->
+ 
+        <!-- ── CARD 4 ── -->
+        <a class="card" href="https://infografiainteractiva.netlify.app/" target="_blank">
+          <div class="card-thumb">
+            <img src="../RecursosGraficos/infog.png" alt="Infografía" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Infografía interactiva Studio Ghibli</h3>
+            <p class="card-desc">Infografía interactiva tipo línea del tiempo basada en el universo visual de Studio Ghibli.
+                Diseñé y desarrollé la experiencia completa, desde la interfaz en Figma hasta su implementación en Google Web Designer.</p>
+            <div class="etiquetas">
+              <span class="card-tagUx">Diseño UX/UI</span>
+              <span class="card-tagpro">Programación</span>
+            </div>
+          </div>
+        </a>
+ 
+        <!-- ── CARD 5 ── -->
+        <!-- <a class="card" href="proyectos/bienestar.html">
+          <div class="card-thumb">
+            <div class="card-thumb-placeholder">🌿</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Sistema de reservas de salas</h3>
+            <p class="card-desc">Sistema de reservas de salas con gestión de aprobaciones. Diseñé flujos de reserva y aprobación, junto con la visualización de disponibilidad.</p>
+            <span class="card-tag">Producto</span>
+          </div>
+        </a> -->
+ 
+        <!-- ── CARD 6 ── -->
+        <a class="card" href="https://tranquil-liger-5426be.netlify.app/" target="_blank">
+          <div class="card-thumb">
+            <img src="../RecursosGraficos/teach.png" alt="Teachdreamer" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Teach dreamer</h3>
+            <p class="card-desc">Este videojuego busca inspirar a estudiantes de 10° y 11° grado a explorar la Ingeniería en Multimedia a través de una experiencia interactiva, 
+              donde se muestran algunas de las áreas en las que se pueden desarrollar.</p>
+            <div class="etiquetas">
+              <span class="card-tagUx">Diseño UX/UI</span>
+              <span class="card-tagpro">Programación</span>
+            </div>
+          </div>
+        </a>
+ 
+      </div><!-- /carousel -->
+ 
+      <button class="arrow arrow-right" id="nextBtn" aria-label="Siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div><!-- /carousel-outer -->
+ 
+    <!-- Dots indicadores -->
+    <div class="carousel-dots" id="dots"></div>
+ 
+  </section>
+
+    <!-- ══════════════════════════════
+       TOOLS TICKER
+  ══════════════════════════════ -->
+  <div class="tools-strip">
+    <div class="tools-track" id="ticker">
+      <!--
+        Los íconos se generan desde main.js.
+      -->
+    </div>
+  </div>
+ 
+  <!-- ══════════════════════════════
+       CONTACTO
+  ══════════════════════════════ -->
+  <section id="contacto">
+    <div class="contact-card">
+ 
+      <p class="contact-pre">¿Te interesa mi trabajo?</p>
+      <h2 class="contact-title">¡Conectemos!</h2>
+ 
+      <div class="contact-btns">
+ 
+        <a href="https://linkedin.com/in/paulaapachon" target="_blank" rel="noopener" class="contact-btn">
+          <!-- Ícono LinkedIn -->
+          <img src="../Iconos/LinkedIn.svg" alt="LinkedIn">
+          LinkedIn
+        </a>
+ 
+        <a href="mailto:pachon.paula1@gmail.com" class="contact-btn">
+          <!-- Ícono correo -->
+          <img src="../Iconos/Mail.svg" alt="Mail">
+          Escríbeme un correo
+        </a>
+ 
+        <a href="https://wa.me/573194972886" target="_blank" rel="noopener" class="contact-btn">
+          <!-- Ícono WhatsApp -->
+          <img src="../Iconos/Whatsapp.svg" alt="Whatsapp">
+          Hablemos por WhatsApp
+        </a>
+ 
+        <a href="https://behance.net/tu-usuario" target="_blank" rel="noopener" class="contact-btn">
+          <!-- Ícono Behance -->
+          <img src="../Iconos/Behance.svg" alt="Behance">
+          Behance
+        </a>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer id="footer">
+    <p class="footer-copy">© 2026 Paula Pachón · Ingeniera en multimedia</p>
+  </footer>
+
+  <!-- ══════════════════════════════
+       LOADER
+  ══════════════════════════════ -->
     <section class="loader">
         <div></div>
         <div></div>
@@ -284,52 +245,7 @@
             }, 2000); 
         });
     </script>
-    <script src="../js/carousel.js" defer></script>
-    <script src="../js/activenav.js" defer></script>
-    <!--script mensaje-->
-    <script >
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector(".btn-enviar").addEventListener("click", function () {
-                let email = document.getElementById("email").value.trim();
-                let mensaje = document.getElementById("mensaje").value.trim();
-
-                if (email === "" || mensaje === "") {
-                    alert("Por favor, completa todos los campos.");
-                    return;
-                }
-
-                // Enviar los datos al servidor con Fetch
-                fetch("enviarCorreo.php", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: `email=${encodeURIComponent(email)}&mensaje=${encodeURIComponent(mensaje)}`
-                })
-                .then(response => response.text())
-                .then(data => {
-                    alert("Mensaje enviado correctamente"); // Muestra confirmación
-                    document.getElementById("email").value = ""; // Limpia email
-                    document.getElementById("mensaje").value = ""; // Limpia mensaje
-                })
-                .catch(error => console.error("Error:", error));
-            });
-        });
-    </script>
-    <!--script footer-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const contacto = document.querySelector("#contacto");
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        contacto.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            observer.observe(contacto);
-        });
-
-    </script>
+ 
+  <script src="../js/main.js"></script>
 </body>
 </html>
