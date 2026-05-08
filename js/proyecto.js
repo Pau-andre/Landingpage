@@ -15,7 +15,6 @@ document.addEventListener('scroll', () => {
 
 /* ─── VIDEO PLACEHOLDER ─── */
 document.querySelectorAll('.video-placeholder').forEach(placeholder => {
-  // aplicar imagen de fondo si existe
   const thumb = placeholder.dataset.thumb;
   if (thumb) {
     placeholder.style.backgroundImage = `url(${thumb})`;
@@ -24,14 +23,28 @@ document.querySelectorAll('.video-placeholder').forEach(placeholder => {
   }
 
   placeholder.addEventListener('click', () => {
-    const url = placeholder.dataset.video + '?autoplay=1';
-    const iframe = document.createElement('iframe');
-    iframe.src = url;
-    iframe.frameBorder = '0';
-    iframe.allow = 'autoplay; fullscreen';
-    iframe.allowFullscreen = true;
-    iframe.style.cssText = 'width:100%; height:100%; min-height:340px;';
-    placeholder.replaceWith(iframe);
+    const url = placeholder.dataset.video;
+    const isYoutube = url.includes('youtube.com') || url.includes('youtu.be');
+
+    if (isYoutube) {
+      /* ─── YouTube → iframe ─── */
+      const iframe = document.createElement('iframe');
+      const separator = url.includes('?') ? '&' : '?';
+      iframe.src = url + separator + 'autoplay=1';
+      iframe.frameBorder = '0';
+      iframe.allow = 'autoplay; fullscreen';
+      iframe.allowFullscreen = true;
+      iframe.style.cssText = 'width:100%; height:100%; min-height:340px;';
+      placeholder.replaceWith(iframe);
+    } else {
+      /* ─── Archivo local (.mp4) → video tag ─── */
+      const video = document.createElement('video');
+      video.src = url;
+      video.controls = true;
+      video.autoplay = true;
+      video.style.cssText = 'width:100%; height:100%; min-height:340px; object-fit:contain; background:#000;';
+      placeholder.replaceWith(video);
+    }
   });
 });
 
@@ -87,7 +100,9 @@ const lightboxClose = document.getElementById('lightbox-close');
 
 document.querySelectorAll('.artefacto-img img, .extra-img img').forEach(img => {
   img.style.cursor = 'zoom-in';
-  img.addEventListener('click', () => {
+  img.style.touchAction = 'manipulation';
+  img.addEventListener('click', (e) => {
+    e.preventDefault();
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightbox.classList.add('active');

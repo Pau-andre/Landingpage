@@ -746,11 +746,77 @@ h1 {
   border-color: rgba(255,255,255,0.6);
 }
 
+/* ─── NAVEGACIÓN ENTRE PROYECTOS ─── */
+.proyecto-nav {
+  max-width: 1100px;
+  margin: 0 auto 0;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid rgba(106,91,202,0.12);
+}
+
+.proyecto-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(106,91,202,0.12);
+  background: var(--white);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  max-width: 280px;
+}
+.proyecto-nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(106,91,202,0.12);
+  border-color: var(--purple-deep);
+}
+.proyecto-nav-btn svg {
+  flex-shrink: 0;
+  color: var(--purple-deep);
+  transition: transform 0.2s;
+}
+.proyecto-nav-btn:first-child:hover svg {
+  transform: translateX(-3px);
+}
+.proyecto-nav-btn--next:hover svg {
+  transform: translateX(3px);
+}
+.proyecto-nav-btn--next {
+  margin-left: auto;
+  text-align: right;
+  flex-direction: row;
+}
+.proyecto-nav-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.proyecto-nav-label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--purple-mid);
+}
+.proyecto-nav-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.3px;
+}
+
 /* ════════════════════════════
    CONTACTO
 ════════════════════════════ */
 #contacto {
-  padding: 5rem clamp(1.5rem, 5vw, 3.5rem) 0;
+  padding: 2.5rem clamp(1.5rem, 5vw, 3.5rem) 0;
 }
 
 .contact-card {
@@ -846,6 +912,8 @@ h1 {
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 #lightbox-close:hover { opacity: 1; }
 
@@ -857,7 +925,9 @@ h1 {
   .hero-grid           { grid-template-columns: 1fr; }
   .resultado-card      { grid-template-columns: 1fr; }
   .problema-card       { grid-template-columns: 1fr; }
-  .resultado-media     { min-height: 260px; }
+  .resultado-media     { 
+    /* min-height: 240px; */
+    min-height: unset; }
     /* Contacto */
   .contact-btns {
     flex-direction: column;
@@ -867,6 +937,13 @@ h1 {
     width: 100%;
     max-width: 300px;
     justify-content: center;
+  }
+    .resultado-media img {
+    position: relative; /* ← quita el absolute */
+    inset: auto;
+    width: 100%;
+    height: auto; /* ← altura automática según la imagen */
+    object-fit: contain;
   }
 
   .video-placeholder   { min-height: 500px; }
@@ -922,9 +999,13 @@ h1 {
   /* Resultado */
   .resultado-section   { padding: 0 20px; }
   .resultado-card      { grid-template-columns: 1fr; }
-  .resultado-media     { min-height: 240px; }
   .resultado-text      { padding: 36px 28px; }
   .resultado-text h2   { font-size: 26px; }
+
+  /* nav proyectos */
+  .proyecto-nav        { padding: 40px 20px; }
+  .proyecto-nav-btn    { padding: 12px 16px; max-width: 48%; }
+  .proyecto-nav-title  { font-size: 13px; }
 
   /* FAB */
   .fab                 { bottom: 20px; right: 20px; padding: 12px 18px; font-size: 13px; }
@@ -948,4 +1029,7 @@ h1 {
   .problema-text       { padding: 28px 20px; }
   .resultado-text      { padding: 28px 20px; }
   nav                  { left: 8px; right: 8px; }
+
+  .proyecto-nav-title  { font-size: 12px; }
+  .proyecto-nav-label  { display: none; }
 }
