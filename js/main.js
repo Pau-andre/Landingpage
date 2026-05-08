@@ -126,7 +126,7 @@ inner.appendChild(thumb);
 ══════════════════════════════════════ */
 (function () {
   const tools = [
-    { label: 'Figma',        src: '../Iconos/figma.svg' },
+    { label: 'Figma',        src: '../Iconos/Figma.svg' },
     { label: 'Illustrator',  src: '../Iconos/Ai.svg' },
     { label: 'Unity',        src: '../Iconos/unity.svg' },
     { label: 'Zoho Sprints', src: '../Iconos/Zoho.svg' },
@@ -156,5 +156,51 @@ inner.appendChild(thumb);
     item.className = 'tool-item';
     item.innerHTML = `<img src="${t.src}" alt="${t.label}" /><span>${t.label}</span>`;
     track.appendChild(item);
+  });
+})();
+
+/* ════════════════════════════
+   TILT 3D EN CARDS
+════════════════════════════ */
+(function () {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    /* Agregar el elemento de brillo */
+    const shine = document.createElement('div');
+    shine.className = 'card-shine';
+    card.appendChild(shine);
+
+    card.addEventListener('mousemove', (e) => {
+      const rect   = card.getBoundingClientRect();
+      const x      = e.clientX - rect.left; // posición X del mouse dentro de la card
+      const y      = e.clientY - rect.top;  // posición Y del mouse dentro de la card
+      const cx     = rect.width  / 2;
+      const cy     = rect.height / 2;
+
+      // Ángulo de inclinación — máximo 12 grados
+      const rotateX = ((y - cy) / cy) * -8;
+      const rotateY = ((x - cx) / cx) *  8;
+
+      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+      card.style.boxShadow = `${-rotateY}px ${rotateX}px 32px rgba(107, 78, 255, 0.18)`;
+
+      // Mover el brillo siguiendo el mouse
+      const px = (x / rect.width)  * 100;
+      const py = (y / rect.height) * 100;
+      shine.style.setProperty('--x', px + '%');
+      shine.style.setProperty('--y', py + '%');
+    });
+
+    /* Volver al estado normal al salir */
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0)';
+      card.style.boxShadow = '0 3px 5.5px 0 #BCB6CD';
+    });
+
+    /* Suavizar el regreso */
+    card.addEventListener('mouseenter', () => {
+      card.style.transition = 'transform 0.1s ease, box-shadow 0.1s ease';
+    });
   });
 })();

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto — GreenRise</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../CSS/Proyecto.css">
+</head>
+
+    <!-- ─── LIGHTBOX ─── -->
+  <div id="lightbox">
+    <button id="lightbox-close">✕</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a href="../index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Trabajos
+    </a>
+    <a href="../index.html" class="nav-logo">Paula<span>Pachón</span></a>
+  </nav>
+
+  <!-- ─── BOTÓN FLOTANTE ─── -->
+  <a href="https://green-rise.netlify.app/" target="_blank" class="fab" id="fab">
+    Abrir Videojuego
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M3 11L11 3M11 3H5M11 3V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" style="margin-top: 64px;">
+    <div class="tags fade-up">
+      <span class="tag tag-purple">Diseño UX/UI</span>
+      <span class="tag tag-blue">Programación</span>
+      <span class="tag tag-green">Research</span>
+      <span class="tag tag-pink">Game Design</span>
+      <!-- <span class="tag tag-orange">Prototipado</span> -->
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="fade-up delay-1">GREENRISE</h1>
+        <h3>Proyecto ganador QS ImpACT Skills Challenge 2025 - Advanced Track</h3>
+        <p class="hero-desc fade-up delay-2">Videojuego educativo enfocado en sostenibilidad ambiental, alineado con los ODS 4 (Educación de calidad), 11 (Ciudades sostenibles) y 13 (Acción climática).
+          En dos semanas, desarrollamos una experiencia interactiva para jóvenes y adultos, enfocada en enseñar prácticas de reciclaje y reutilización a través del juego.
+          <br><br>Desde UX/UI, trabajé en la experiencia del usuario, la integración de interfaces y su funcionamiento en Unity, además de apoyar la narrativa, buscando una interacción clara y coherente.</p>
+      </div>
+
+      <div class="ficha fade-up delay-3">
+        <div class="ficha-row">
+          <span class="ficha-label">Año</span>
+          <span class="ficha-value">2025</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Rol</span>
+          <span class="ficha-value">Diseñadora UX/UI</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Herramientas</span>
+          <div class="tools">
+            <span class="tool-chip">
+              <img src="../Iconos/Figma.svg" alt="Figma">
+              Figma
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/unity.svg" alt="Unity">
+              Unity
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/C.svg" alt="C#">
+              C#
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/Ai.svg" alt="C#">
+              Illustrator
+            </span>
+          </div>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Tiempo del concurso</span>
+          <span class="ficha-value">2 semanas</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Plataforma</span>
+          <span class="ficha-value">WEB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 01 · PROBLEMA ─── -->
+  <section class="problema-section">
+    <div class="problema-card">
+      <div class="problema-text">
+        <span class="section-eyebrow eyebrow-light">01 — Contexto</span>
+        <h2>El problema</h2>
+        <p>A partir de la observación y la experiencia propia, identificamos que muchas personas no tienen claridad sobre cómo reciclar correctamente ni sobre el impacto de sus acciones diarias. En nuestro entorno, era frecuente encontrar una mala separación de residuos (orgánicos, plásticos y papel), evidenciando una brecha entre el conocimiento y la práctica.
+          <br>A partir de esto, vimos la oportunidad de diseñar una solución que hiciera el aprendizaje más claro y fomentara hábitos más conscientes.</p>
+      </div>
+      <div class="video-placeholder" data-video="https://www.youtube.com/embed/PGAD5kp2sEo"
+          data-thumb="../RecursosGraficos/GreenRise/portada.svg">
+        <div class="play-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M6 4.5L16 10L6 15.5V4.5Z" fill="#6A5BCA"/>
+          </svg>
+        </div>
+        <!--<span class="video-label">Ver video del Juego</span>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 02 · INSIGHTS ─── -->
+  <section class="insights-section">
+    <div class="insights-inner">
+      <div class="section-header">
+        <span class="section-eyebrow eyebrow-dark">02 — Research</span>
+        <h2>Hallazgos clave</h2>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <div class="insight-number">01</div>
+          <h3>Falta de conocimiento práctico</h3>
+          <p>Los usuarios no sabían cómo reciclar correctamente ni qué se podía hacer con los materiales reutilizados.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">02</div>
+          <h3>Baja conciencia sobre el impacto</h3>
+          <p>Aunque existía conocimiento general, no se traducía en acciones concretas en el día a día.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">03</div>
+          <h3>Dificultad inicial en la interacción</h3>
+          <p>Durante las primeras pruebas del prototipo, los usuarios presentaban confusión al no tener indicaciones claras sobre controles y acciones disponibles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 03 · PROCESO ─── -->
+  <section class="proceso-section">
+    <div class="section-header">
+      <span class="section-eyebrow eyebrow-dark">03 — Diseño</span>
+      <h2>Proceso de diseño</h2>
+      <p>Diseñamos una experiencia progresiva donde el usuario comienza en una ciudad contaminada y a través de misiones, va transformándola mediante el reciclaje y la reutilización de materiales.</p>
+    </div>
+
+    <div class="artefactos-grid">
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/GreenRise/definición.svg" alt="Definición" loading="lazy">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Definición del enfoque</span>
+          <p class="artefacto-desc">Identificamos una problemática en torno al reciclaje y la reutilización, siendo una oportunidad para aportar a los objetivos de desarrollo sostenible. Por ello, definimos una experiencia centrada en el aprendizaje interactivo.</p>
+        </div>
+      </div>
+
+      <!-- <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../Imagenes/journey-map.jpg" alt="Journey Map">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Journey Map</span>
+          <p class="artefacto-desc">Recorrido emocional del usuario durante la experiencia del juego.</p>
+        </div>
+      </div> -->
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/GreenRise/interfaces.svg" alt="Interfaces" loading="lazy">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Diseño de interfaces y mecánicas</span>
+          <p class="artefacto-desc">Diseñe e implemente las interfaces y elementos visuales en Unity, priorizando la claridad y la coherencia con la narrativa del juego.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/GreenRise/prueba.jpg" alt="Test" loading="lazy">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Pruebas de usuario</span>
+          <p class="artefacto-desc">Realizamos pruebas con usuarios para identificar dificultades de comprensión, a partir de esto, ajustamos flujos, indicaciones y componentes para mejorar la experiencia.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="proceso-desc">
+      <div>
+        <h3>Decisiones de diseño</h3>
+        <ul>
+          <li>Incorporamos misiones guiadas para facilitar el aprendizaje</li>
+          <li>Mejoramos la claridad de las interfaces y la jerarquía visual</li>
+          <li>Diseñamos sistemas de feedback para reforzar las acciones del usuario</li>
+          <li>Integramos una narrativa para aumentar el engagement</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Iteraciones y aprendizajes</h3>
+        <p>A partir de pruebas con usuarios, identificamos puntos de fricción en los flujos y en la comprensión de los controles. Con base en esto, ajustamos indicaciones, navegación y estructura del juego.
+          <br><br>Estos cambios permitieron reducir la curva de aprendizaje y lograr una experiencia más intuitiva desde los primeros minutos de uso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 04 · SECCIÓN EXTRA ─── -->
+  <section class="extra-section">
+    <div class="extra-inner">
+      <div class="section-header">
+        <span class="section-eyebrow eyebrow-dark">04 — Evolución del diseño</span>
+        <h2>Rediseño e iteración</h2>
+      </div>
+      <!-- imagenes -->
+      <!-- <div class="extra-img">
+        <img src="../Imagenes/rediseno.jpg" alt="Rediseño e iteración" loading="lazy>
+      </div> -->
+      
+      <div class="artefactos-grid">
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/GreenRise/Uikit.png" alt="UI kit" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">UI Kit</span>
+            <p class="artefacto-desc">Colores, tipografía y estilo de GreenRise. Se ajusta la paleta de colores para lograr mayor coherencia visual</p>
+          </div>
+        </div>
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/GreenRise/HUD.svg" alt="HUD" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">Rediseño HUD del juego</span>
+            <p class="artefacto-desc"> Rediseñé el HUD del juego para mejorar la claridad de la información durante la interacción.
+              Ajusté la jerarquía visual y la disposición de los elementos, logrando interfaces más completas, claras y con una identidad visual más consistente.</p>
+          </div>
+        </div>
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/GreenRise/Tienda.svg" alt="tienda" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">Rediseño Tienda</span>
+            <p class="artefacto-desc">Se cambió la forma de interactuar con la tienda: antes solo se abría una interfaz, ahora el usuario puede entrar directamente a ella. 
+                <br>A partir de este cambio, rediseñé la interfaz de la tienda para hacer más clara la toma de decisiones del usuario y alinearla con el estilo visual general del juego.</p>
+          </div>
+        </div>
+        
+        
+      </div>
+
+      <!-- descripción -->
+      <div class="extra-desc" style="margin-top: 32px;">
+        <div>
+          <p>Detectamos oportunidades de mejora en la claridad visual y en la comprensión de la interfaz.
+            Con base en estos hallazgos, realizamos un rediseño enfocado en fortalecer la identidad visual del juego y optimizar la experiencia del usuario.
+            Desde mi rol, me enfoqué en las interfaces del juego. 
+            <br>Como resultado, los cambios realizados hicieron que la experiencia fuera más clara, consistente y mejor alineada con los objetivos del proyecto.</p>
+            <br>
+            <p class="notas">Nota: Estas mejoras corresponden a una iteración posterior y no se encuentran actualmente implementadas en la versión publicada del juego.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 05 · RESULTADO FINAL ─── -->
+  <section class="resultado-section">
+    <div class="resultado-card">
+      <!-- <div class="resultado-media">
+         Reemplaza el src con la ruta real de la imagen
+        <img src="../Imagenes/resultado-final.jpg" alt="Resultado final GreenRise" loading="lazy">
+      </div> -->
+      <div class="video-placeholder" data-video="https://www.youtube.com/embed/PGAD5kp2sEo"
+          data-thumb="../RecursosGraficos/GreenRise/portada.svg">
+        <div class="play-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M6 4.5L16 10L6 15.5V4.5Z" fill="#6A5BCA"/>
+          </svg>
+        </div>
+        <!--<span class="video-label">Ver video del Juego</span>-->
+      </div>
+      <div class="resultado-text">
+        <span class="section-eyebrow eyebrow-light" style="display:block; margin-bottom:16px;">05 — Resultado</span>
+        <h2>Resultado final</h2>
+        <p>El proyecto tuvo un impacto positivo en los usuarios, quienes mostraron mayor conciencia sobre sus hábitos de reciclaje.
+          Algunas personas comentaron que, después de interactuar con el juego, empezaron a reflexionar antes de desechar residuos y a prestar más atención a su correcta clasificación.
+          <br><br>El proyecto obtuvo el primer lugar en el Skills Challenge 2025.
+          <br>Después de esto, el juego siguió evolucionando, incluyendo un rediseño de interfaces y mejoras en el estilo visual para lograr una identidad más sólida y una mejor experiencia.</p>
+        <a href="https://green-rise.netlify.app/" target="_blank" class="btn-outline-white">
+          Abrir Videojuego
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M3 11L11 3M11 3H5M11 3V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTO
+  ══════════════════════════════ -->
+  <section id="contacto">
+    <div class="contact-card">
+      <p class="contact-pre">¿Te interesa mi trabajo?</p>
+      <h2 class="contact-title">¡Conectemos!</h2>
+      <div class="contact-btns">
+        <a href="https://linkedin.com/in/paulaapachon" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/LinkedIn.svg" alt="LinkedIn">
+          LinkedIn
+        </a>
+        <a href="mailto:pachon.paula1@gmail.com" class="contact-btn">
+          <img src="../Iconos/Mail.svg" alt="Mail">
+          Escríbeme un correo
+        </a>
+        <a href="https://wa.me/573194972886" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/Whatsapp.svg" alt="Whatsapp">
+          Hablemos por WhatsApp
+        </a>
+        <a href="https://behance.net/paulapachon1" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/Behance.svg" alt="Behance">
+          Behance
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer id="footer">
+    <p class="footer-copy">© 2026 Paula Pachón · Ingeniera en multimedia</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../JS/proyecto.js"></script>
+
+</body>
+</html>

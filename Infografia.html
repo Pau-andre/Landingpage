@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto — Infografía interactiva</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../CSS/Proyecto.css">
+</head>
+
+    <!-- ─── LIGHTBOX ─── -->
+  <div id="lightbox">
+    <button id="lightbox-close">✕</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a href="../index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Trabajos
+    </a>
+    <a href="../index.html" class="nav-logo">Paula<span>Pachón</span></a>
+  </nav>
+
+  <!-- ─── BOTÓN FLOTANTE ─── -->
+  <a href="https://infografiainteractiva.netlify.app/" target="_blank" class="fab" id="fab">
+    Interactuar
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M3 11L11 3M11 3H5M11 3V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" style="margin-top: 64px;">
+    <div class="tags fade-up">
+      <span class="tag tag-purple">Diseño UX/UI</span>
+      <span class="tag tag-green">Research</span>
+      <span class="tag tag-blue">Programación</span>
+      <span class="tag tag-orange">Diseño interactivo</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="fade-up delay-1">INFOGRAFÍA INTERACTIVA</h1>
+        <h3>Proyecto académico: Experiencia interactiva</h3>
+        <p class="hero-desc fade-up delay-2">Diseñé y desarrollé una infografía interactiva tipo línea de tiempo inspirada en el universo visual de Studio Ghibli.
+          El proyecto fue pensado como una experiencia exploratoria para presentar información sobre las películas del estudio de una forma más visual e interactiva.
+          <br><br>Desarrollé el proyecto de principio a fin: conceptualización, definición visual, diseño en Figma, creación de iconografía en Illustrator e implementación funcional en Google Web Designer.</p>
+        <p class="notas">Nota: Este proyecto fue realizado únicamente con fines educativos y de portafolio.</p>
+      </div>
+
+      <div class="ficha fade-up delay-3">
+        <div class="ficha-row">
+          <span class="ficha-label">Año</span>
+          <span class="ficha-value">2024</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Rol</span>
+          <span class="ficha-value">Diseñadora UX/UI y desarrolladora</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Herramientas</span>
+          <div class="tools">
+            <span class="tool-chip">
+              <img src="../Iconos/Figma.svg" alt="Figma">
+              Figma
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/Ai.svg" alt="C#">
+              Illustrator
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/gw.svg" alt="C#">
+              Google web Designer
+            </span>
+          </div>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Plataforma</span>
+          <span class="ficha-value">Web</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 01 · PROBLEMA ─── -->
+  <section class="problema-section">
+    <div class="problema-card">
+      <div class="problema-text">
+        <span class="section-eyebrow eyebrow-light">01 — Concepto</span>
+        <h2>La idea del proyecto</h2>
+        <p>El proyecto nació con la intención de transformar una línea de tiempo tradicional en una experiencia interactiva inspirada en el universo visual de Studio Ghibli.
+          <br>La propuesta buscaba que el usuario explorara películas, información y trailers de forma más dinámica y visual, manteniendo una estética coherente con la narrativa y el estilo artístico del estudio.</p>
+      </div>
+      <div class="video-placeholder" data-video="../RecursosGraficos/info/videoinfo.mp4"
+          data-thumb="../RecursosGraficos/info/a">
+        <div class="play-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M6 4.5L16 10L6 15.5V4.5Z" fill="#6A5BCA"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 02 · INSIGHTS ─── -->
+  <section class="insights-section">
+    <div class="insights-inner">
+      <div class="section-header">
+        <span class="section-eyebrow eyebrow-dark">02 — Research</span>
+        <h2>Referencias e inspiración</h2>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <div class="insight-number">01</div>
+          <h3>Universo visual de Studio Ghibli</h3>
+          <p>Analicé colores, composición y estilos visuales presentes en las películas para construir una experiencia coherente con la identidad del estudio.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">02</div>
+          <h3>Experiencias interactivas tipo timeline</h3>
+          <p>Investigué referencias de líneas de tiempo interactivas para identificar formas más claras y dinámicas de navegación.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">03</div>
+          <h3>Consumo visual de contenido</h3>
+          <p>Prioricé una experiencia enfocada en la exploración visual y el descubrimiento progresivo de la información.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 03 · PROCESO ─── -->
+  <section class="proceso-section">
+    <div class="section-header">
+      <span class="section-eyebrow eyebrow-dark">03 — Diseño</span>
+      <h2>Proceso de diseño</h2>
+      <p>Durante el proceso de diseño realicé un análisis de referencias y estilo, siguiendo las siguientes etapas:
+      </p>
+    </div>
+
+    <div class="artefactos-grid">
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src=".../RecursosGraficos/info/a" alt="User Persona">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Conceptualización y referencias</span>
+          <p class="artefacto-desc">Definí una dirección visual inspirada en la estética del estudio, recopilando referencias gráficas y estilos de composición.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/info/a" alt="Journey Map">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Wireframes y estructura</span>
+          <p class="artefacto-desc">Organicé los contenidos de la línea de tiempo, priorizando una navegación clara y una exploración progresiva de las películas.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/info/a" alt="Wireframes">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Diseño visual e interacción</span>
+          <p class="artefacto-desc">Diseñé interfaces y elementos gráficos en Figma e Illustrator, buscando una experiencia inmersiva y coherente con el concepto visual del proyecto.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/info/a" alt="Prototipo">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Desarrollo e implementación</span>
+          <p class="artefacto-desc">Implementé la experiencia en Google Web Designer, integrando animaciones, transiciones y navegación interactiva.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="proceso-desc">
+      <div>
+        <h3>Decisiones de diseño</h3>
+        <ul>
+          <li>Se incorporó respuestas preseleccionadas para agilizar el diligenciamiento.</li>
+          <li>Se permitio modificar la puntuación para dar mayor flexibilidad al usuario.</li>
+          <li>Se diseñó una experiencia responsive para web y móvil.</li>
+          <li>Se adaptó la estructura y los componentes según las necesidades de cada cliente</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Iteraciones y aprendizajes</h3>
+        <p>Durante el proceso, iteré a partir del feedback del equipo y del cliente, ajustando la interacción y la estructura de las encuestas para mejorar su comprensión y uso según el contexto.</p>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ─── 05 · RESULTADO FINAL ─── -->
+  <section class="resultado-section">
+    <div class="resultado-card">
+      <div class="resultado-media">
+        <img src="../../RecursosGraficos/info/a" alt="Resultado">
+      </div>
+      <div class="resultado-text">
+        <span class="section-eyebrow eyebrow-light" style="display:block; margin-bottom:16px;">04 — Resultado</span>
+        <h2>Resultado final</h2>
+        <p>El resultado fue una experiencia interactiva enfocada en la exploración visual de películas de Studio Ghibli, combinando navegación, narrativa e interacción en un mismo recorrido.
+            <br><br>El proyecto integró diseño, interacción y desarrollo en una sola experiencia, permitiéndome fortalecer habilidades en conceptualización visual, diseño UX/UI e implementación funcional.</p>
+        <a href="https://infografiainteractiva.netlify.app/" target="_blank" class="btn-outline-white">
+          Interactuar
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M3 11L11 3M11 3H5M11 3V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTO
+  ══════════════════════════════ -->
+  <section id="contacto">
+    <div class="contact-card">
+      <p class="contact-pre">¿Te interesa mi trabajo?</p>
+      <h2 class="contact-title">¡Conectemos!</h2>
+      <div class="contact-btns">
+        <a href="https://linkedin.com/in/paulaapachon" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/LinkedIn.svg" alt="LinkedIn">
+          LinkedIn
+        </a>
+        <a href="mailto:pachon.paula1@gmail.com" class="contact-btn">
+          <img src="../Iconos/Mail.svg" alt="Mail">
+          Escríbeme un correo
+        </a>
+        <a href="https://wa.me/573194972886" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/Whatsapp.svg" alt="Whatsapp">
+          Hablemos por WhatsApp
+        </a>
+        <a href="https://behance.net/paulapachon1" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/Behance.svg" alt="Behance">
+          Behance
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer id="footer">
+    <p class="footer-copy">© 2026 Paula Pachón · Ingeniera en multimedia</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../JS/proyecto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto — Teach dreamer</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../CSS/Proyecto.css">
+</head>
+
+    <!-- ─── LIGHTBOX ─── -->
+  <div id="lightbox">
+    <button id="lightbox-close">✕</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a href="../index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Trabajos
+    </a>
+    <a href="../index.html" class="nav-logo">Paula<span>Pachón</span></a>
+  </nav>
+
+  <!-- ─── BOTÓN FLOTANTE ─── -->
+  <a href="https://tranquil-liger-5426be.netlify.app/" target="_blank" class="fab" id="fab">
+    Abrir Videojuego 
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M3 11L11 3M11 3H5M11 3V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" style="margin-top: 64px;">
+    <div class="tags fade-up">
+      <span class="tag tag-purple">Diseño UX/UI</span>
+      <span class="tag tag-green">Research</span>
+      <span class="tag tag-blue">Programación</span>
+      <span class="tag tag-pink">Game Design</span>
+      <!-- <span class="tag tag-orange">Prototipado</span> -->
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="fade-up delay-1">TEACH DREAMER</h1>
+        <h3>Proyecto académico: Experiencia interactiva educativa</h3>
+        <p class="hero-desc fade-up delay-2">Videojuego desarrollado con el objetivo de acercar a estudiantes de grados 10 y 11 al campo de la Ingeniería en Multimedia y las áreas STEAM.
+          <br><br>La experiencia buscaba romper la percepción de que esta carrera se limita únicamente a las matemáticas, mostrando distintas áreas del sector a través de minijuegos y personajes inspirados en mujeres referentes del ámbito tecnológico y creativo. Desde mi rol, trabajé en diseño UX, investigación con usuarios, pruebas de usabilidad y desarrollo de un minijuego de animación 2D.</p>
+      </div>
+
+      <div class="ficha fade-up delay-3">
+        <div class="ficha-row">
+          <span class="ficha-label">Año</span>
+          <span class="ficha-value">2024</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Rol</span>
+          <span class="ficha-value">Diseñadora UX/UI y desarrolladora</span>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Herramientas</span>
+          <div class="tools">
+            <span class="tool-chip">
+              <img src="../Iconos/unity.svg" alt="Figma">
+              Unity
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/canva.svg" alt="C#">
+              Canva
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/Ai.svg" alt="C#">
+              Illustrator
+            </span>
+            <span class="tool-chip">
+              <img src="../Iconos/Figma.svg" alt="C#">
+              Figma
+            </span>
+          </div>
+        </div>
+        <div class="ficha-row">
+          <span class="ficha-label">Plataforma</span>
+          <span class="ficha-value">Web</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 01 · PROBLEMA ─── -->
+  <section class="problema-section">
+    <div class="problema-card">
+      <div class="problema-text">
+        <span class="section-eyebrow eyebrow-light">01 — Contexto</span>
+        <h2>El problema</h2>
+        <p>Existe una baja participación femenina en áreas STEAM, muchas estudiantes de grados 10 y 11 suelen asociar estas disciplinas únicamente con matemáticas o programación, dejando de lado áreas creativas e interdisciplinarias como la Ingeniería en Multimedia.
+<br><br>El proyecto buscaba crear una experiencia interactiva que acercara esta carrera a jóvenes estudiantes de una forma más dinámica, visual y representativa.</p>
+      </div>
+      <div class="video-placeholder" data-video="../RecursosGraficos/tech/juegom.mp4"
+          data-thumb="../RecursosGraficos/tech/portada.png">
+        <div class="play-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M6 4.5L16 10L6 15.5V4.5Z" fill="#6A5BCA"/>
+          </svg>
+        </div>
+        <!--<span class="video-label">Ver video del Juego</span>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 02 · INSIGHTS ─── -->
+  <section class="insights-section">
+    <div class="insights-inner">
+      <div class="section-header">
+        <span class="section-eyebrow eyebrow-dark">02 — Research</span>
+        <h2>Hallazgos clave</h2>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <div class="insight-number">01</div>
+          <h3>Percepción limitada sobre carreras STEAM</h3>
+          <p>Varias estudiantes asociaban este tipo de carreras únicamente con programación o matemáticas avanzadas.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">02</div>
+          <h3>Mayor conexión con experiencias dinámicas</h3>
+          <p>Las participantes mostraban más interés cuando la información se presentaba de forma visual e interactiva.</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">03</div>
+          <h3>Importancia de la representación</h3>
+          <p>El uso de personajes femeninos referentes ayudaba a generar mayor identificación y cercanía con la experiencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 03 · PROCESO ─── -->
+  <section class="proceso-section">
+    <div class="section-header">
+      <span class="section-eyebrow eyebrow-dark">03 — Diseño</span>
+      <h2>Proceso de diseño</h2>
+      <p>El proyecto pasó por distintas etapas de definición, diseño y validación para construir una experiencia clara, dinámica y fácil de explorar.
+      </p>
+    </div>
+
+    <div class="artefactos-grid">
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/tech/formulario.png" alt="Investigación">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Investigación y recolección de datos</span>
+          <p class="artefacto-desc">Participé en entrevistas iniciales y en la recolección de información junto al equipo, utilizando formularios para comprender percepciones e intereses de las estudiantes frente a las carreras de ingeniería.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/tech/wireframe.png" alt="wireframe">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Definición de la experiencia</span>
+          <p class="artefacto-desc">Desarrollé elementos UX como storyboard, user flow, wireframes y user journey, organizando la estructura y navegación general del juego.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/tech/juego.png" alt="Wireframes">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Diseño y desarrollo del minijuego</span>
+          <p class="artefacto-desc">Diseñé y desarrollé un minijuego de animación 2D, buscando una experiencia interactiva clara, dinámica y alineada con el objetivo educativo del proyecto.</p>
+        </div>
+      </div>
+
+      <div class="artefacto-card">
+        <div class="artefacto-img">
+          <img src="../RecursosGraficos/tech/pruebas.png" alt="Pruebas">
+        </div>
+        <div class="artefacto-info">
+          <span class="artefacto-label">Pruebas de usuario e iteración</span>
+          <p class="artefacto-desc">Realizamos pruebas virtuales con usuarias finales mediante tareas específicas, identificando oportunidades de mejora en navegación, comprensión e interacción. A partir del feedback obtenido, ajustamos flujos y componentes para mejorar la experiencia general.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="proceso-desc">
+      <div>
+        <h3>Decisiones de diseño</h3>
+        <ul>
+          <li>Diseñamos minijuegos para generar una experiencia más dinámica y participativa.</li>
+          <li>Incorporamos personajes femeninos referentes para generar mayor identificación con las estudiantes.</li>
+          <li>Priorizamos una navegación clara y visual para facilitar la exploración y comprensión del juego.</li>
+          <li>Integramos elementos interactivos para incentivar el engagement y el descubrimiento del contenido.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Iteraciones y aprendizajes</h3>
+        <p>Las pruebas con usuarias permitieron detectar dificultades relacionadas con instrucciones, navegación y comprensión de objetivos. Con base en estos hallazgos, iteramos flujos e interacciones para construir una experiencia más intuitiva y accesible.
+          <br><br>Este proceso fortaleció mis habilidades en investigación, validación y diseño iterativo centrado en el usuario.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 04 · Detalle ─── -->
+   <section class="extra-section">
+    <div class="extra-inner">
+      <div class="section-header">
+        <span class="section-eyebrow eyebrow-dark">04 — Detalle</span>
+        <h2>Detalle del proceso</h2>
+      </div>
+      <!-- imagenes -->
+      <!-- <div class="extra-img">
+        <img src="../Imagenes/rediseno.jpg" alt="Rediseño e iteración" loading="lazy>
+      </div> -->
+      
+      <div class="artefactos-grid">
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/tech/Us" alt="User Persona" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">User Persona</span>
+            <p class="artefacto-desc">Se construyó un perfil de usuaria basado en la información recopilada durante la investigación inicial, identificando intereses, motivaciones y percepciones frente a la ingeníeria en multimedia.</p>
+          </div>
+        </div>
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/tech/UserJ.png" alt="User Journey" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">User Journey</span>
+            <p class="artefacto-desc"> Se visualizó el recorrido completo de la usuaria, desde el momento en que conoce el juego hasta su participación activa dentro de la experiencia.
+El user journey permitió identificar oportunidades para generar mayor acompañamiento, motivación y conexión con el contenido.</p>
+          </div>
+        </div>
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/tech/flujo.svg" alt="User Flow por tareas" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">User Flow por tareas</span>
+            <p class="artefacto-desc">Se desarrollaron user flows específicos para distintas tareas dentro del juego, organizando acciones, decisiones y recorridos de navegación para facilitar la interacción de las usuarias.</p>
+          </div>
+        </div>
+        
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/tech/story.png" alt="Storyboard narrativo" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">Storyboard narrativo</span>
+            <p class="artefacto-desc">Construimos un storyboard para definir la narrativa del juego, representando algunas de las preocupaciones y percepciones de las estudiantes.</p>
+          </div>
+        </div>
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/tech/tareas.png" alt="Testing basado en tareas" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">Testing basado en tareas</span>
+            <p class="artefacto-desc">Se realizaron pruebas virtuales con usuarias finales mediante tareas específicas, evaluando navegación, comprensión de objetivos e interacción dentro de la experiencia.</p>
+          </div>
+        </div>
+
+        <div class="artefacto-card">
+          <div class="artefacto-img">
+            <img src="../RecursosGraficos/tech/hallazgo.png" alt="Hallazgos y síntesis del testing" loading="lazy">
+          </div>
+          <div class="artefacto-info">
+            <span class="artefacto-label">Hallazgos y síntesis del testing</span>
+            <p class="artefacto-desc"> Los hallazgos obtenidos fueron organizados y categorizados para identificar oportunidades de mejora relacionadas con funcionalidad, claridad visual, controles y experiencia general del juego.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 05 · RESULTADO FINAL ─── -->
+  <section class="resultado-section">
+    <div class="resultado-card">
+      <div class="resultado-media">
+        <img src="../RecursosGraficos/tech/final.png" alt="Resultado final">
+      </div>
+      <div class="resultado-text">
+        <span class="section-eyebrow eyebrow-light" style="display:block; margin-bottom:16px;">04 — Resultado</span>
+        <h2>Resultado final</h2>
+        <p>Desarrollamos una experiencia interactiva orientada a acercar a estudiantes de secundaria al campo de la Ingeniería en Multimedia. El proyecto exploró distintas áreas de la disciplina mediante dinámicas de juego y personajes inspirados en mujeres referentes del entorno tecnológico y creativo.
+            <br><br>La experiencia buscó generar mayor cercanía e identificación con áreas tecnológicas y creativas a través de una propuesta visual e interactiva.</p>
+        <a href="https://tranquil-liger-5426be.netlify.app/" target="_blank" class="btn-outline-white">
+          Abrir Videojuego
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M3 11L11 3M11 3H5M11 3V9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTO
+  ══════════════════════════════ -->
+  <section id="contacto">
+    <div class="contact-card">
+      <p class="contact-pre">¿Te interesa mi trabajo?</p>
+      <h2 class="contact-title">¡Conectemos!</h2>
+      <div class="contact-btns">
+        <a href="https://linkedin.com/in/paulaapachon" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/LinkedIn.svg" alt="LinkedIn">
+          LinkedIn
+        </a>
+        <a href="mailto:pachon.paula1@gmail.com" class="contact-btn">
+          <img src="../Iconos/Mail.svg" alt="Mail">
+          Escríbeme un correo
+        </a>
+        <a href="https://wa.me/573194972886" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/Whatsapp.svg" alt="Whatsapp">
+          Hablemos por WhatsApp
+        </a>
+        <a href="https://behance.net/paulapachon1" target="_blank" rel="noopener" class="contact-btn">
+          <img src="../Iconos/Behance.svg" alt="Behance">
+          Behance
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer id="footer">
+    <p class="footer-copy">© 2026 Paula Pachón · Ingeniera en multimedia</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../JS/proyecto.js"></script>
+
+</body>
+</html>
