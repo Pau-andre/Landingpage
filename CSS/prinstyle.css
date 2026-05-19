@@ -463,7 +463,44 @@ nav.scrolled {
   flex-direction: column;
   gap: 0.6rem;
   flex: 1;
+  position: relative;
 }
+
+  /* ── Ver proyecto ── */
+.card-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--degrade-hover);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.card:hover .card-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-link svg {
+  transition: transform 0.25s;
+}
+
+.card:hover .card-link svg {
+  transform: translateX(4px);
+}
+
+/* ── final Ver proyecto ── */
+
 .card-name {
   font-family: 'Raleway', sans-serif;
   font-size: 0.97rem;
@@ -872,6 +909,22 @@ nav.scrolled {
     padding: 0 8px;
   }
 
+  .card-link {
+    position: relative; /* vuelve al flujo normal */
+    bottom: auto;
+    left: auto;
+    right: auto;
+    opacity: 1;
+    transform: translateY(0);
+    border-radius: 0 0 20px 20px; /* respeta las esquinas de la card */
+    margin: 0 -1.2rem -1.3rem -1.2rem;
+  }
+
+  .card-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   /* Contacto */
   .contact-btns {
     flex-direction: column;
@@ -883,6 +936,7 @@ nav.scrolled {
     max-width: 300px;
     justify-content: center;
   }
+
 }
 
 /* ════════════════════════════
