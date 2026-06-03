@@ -855,8 +855,18 @@ nav.scrolled {
     margin: 0 auto 1.8rem;
   }
 
+  @media (max-width: 768px) {
   .float-tag {
-    display: none;
+    display: flex; /* ← vuelven a aparecer */
+  }
+
+  .tag-ux img    { width: 65px;  height: 65px; }
+  .tag-prod img  { width: 90px;  height: 90px; }
+  .tag-code img  { width: 95px;  height: 95px; }
+
+  .tag-ux   { top: 2%;  left: 5%; }
+  .tag-prod { top: 40%; left: 0%; }
+  .tag-code { top: 65%; left: 55%; }
   }
 
   .hero-title {
